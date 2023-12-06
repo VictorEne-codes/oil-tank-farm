@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --orange: rgb(251, 115, 31);
+    --white: rgb(232, 228, 228);
+}
+.pre-header{
+    background-color: rgb(194, 190, 190);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.pre-header .right-side ul{
+    display: flex;
+    list-style: none;
+}
+.pre-header .right-side ul li{
+    padding-left: 20px;
+}
+.pre-header .right-side ul li a{
+    text-decoration: none;
+    color: black;
+}
+.pre-header .left-side a{
+    text-decoration: none;
+    color: var(--orange);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+header .middle-box{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+header .inquiry-box{
+    border: 2px solid var(--orange);
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+header .inquiry-box:hover{
+    background-color: var(--orange);
+    color: white;
+}
+header .inquiry-box i{
+    font-size: 20px;
+}
+.header-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+}
+.header-box i{
+    font-size: 50px;
+    color: var(--orange);
+}
+.header-box .color-p{
+    color: var(--orange);
+    text-decoration: none;
+}
+nav{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--orange);
+    padding: 20px 0px;
+    
+}
+nav .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+
+}
+nav .navigation a{
+    text-decoration: none;
+    color: var(--white);
+    padding-bottom: 5px;
+    transition: all .1s ease-in;
+}
+nav .navigation a:hover{
+    border-bottom: 2px solid white;
+    opacity: .5;
+}
+#dropdown{
+    display: none;
+    position: absolute;
+    padding-top: 30px;
+    background-color: var(--orange);
+    color: white;
+    z-index: 1;
+}
+#dropdown li{
+    padding: 10px;
+    list-style: none;
+    transition: all .2s ease-in;
+}
+#dropdown li:hover{
+    transform: translateX(10px);
+}
+.navigation .drop-content:hover #dropdown{
+    display: block;
+}
+main{
+    position: relative;
+}
+.slider{
+    display: none;
+}
+.slider1{
+    display: block;
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5%)50%, rgba(0, 0, 0, 0.5%)50%), url(img/img7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 150px 100px;
+}
+.slider2{
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5%)50%, rgba(0, 0, 0, 0.5%)50%), url(img/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 150px 100px;
+}
+.slider p{
+    font-size: 30px;
+    color: white;
+    letter-spacing: 5px;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding-bottom: 3px;
+}
+.slider h2{
+    font-size: 60px;
+    color: black;
+    padding: 20px 0px;
+    line-height: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.slider h2 span{
+    color: var(--orange);
+}
+.slider a{
+    background-color: var(--orange);
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 100px auto;
+}
+.slider a:hover{
+    background-color: white;
+    color: var(--orange);
+}
+main .arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+main .arrow .fa-chevron-left{
+    padding-right: 40px;
+}
