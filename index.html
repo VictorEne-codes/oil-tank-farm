@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
     <script src="script.js" defer></script>
     <link
         rel="stylesheet"
@@ -51,14 +53,15 @@
             </div>
             <a class="inquiry-box" href="contact-us.html">Inquiry  <i class="fa-thin fa-arrow-right-long"></i></a>
         </header>
-        <nav>
+        <nav id="navBar">
             <div class="logo">
                 <h2>Victor</h1>
             </div>
             <div class="toggle">
-
+                <i class="fa-solid fa-bars"  onclick="openNav()"></i>
+                <i class="fa-solid fa-regular fa-xmark" onclick="closeNav()"></i>
             </div>
-            <ul class="navigation">
+            <ul class="navigation" id="sideNav">
                 <li>
                     <a href="#">HOME</a>
                 </li>
@@ -66,43 +69,210 @@
                     <a id="show-options" href="#">ABOUT US  <i class="fa-solid fa-chevron-down"></i></a>
                     <ul id="dropdown">
                         <li><a href="about-us.html">Our Company</a></li>
-                        <li><a href="our-history.html">Our Offices</a></li>
-                        <li><a href="our-plans.html">Management Team</a></li>
-                        <li><a href="our-team-member.html">Company Profile</a></li>
+                        <li><a href="offices.html">Our Offices</a></li>
                         <li><a href="faq.html">Faq</a></li>
                     </ul>
                 </li>
                 <li class="drop-content">
                     <a id="show-options" href="services.html">SERVICES   <i class="fa-solid fa-chevron-down"></i></a>
                     <ul id="dropdown">
-                        <li><a href="#">Fuel products</a></li>
-                        <li><a href="#">Gas products</a></li>
-                        <li><a href="#">Oil products</a></li>
-                        <li><a href="#">Bitumen products</a></li>
+                        <li><a href="fuel.html">Fuel products</a></li>
+                        <li><a href="gas.html">Gas products</a></li>
+                        <li><a href="oil.html">Oil products</a></li>
+                        <li><a href="bitumen.html">Bitumen products</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#">TANK FARMS</a>
+                <li>
+                    <a href="tank-farms.html">TANK FARMS</a>
                 </li>
-                <li><a href="contact-us.html">CONTACT US</a></li>
+                <li>
+                    <a href="contact-us.html">CONTACT US</a>
+                </li>
             </ul>
         </nav>
         <main>
-            <section class="slider slider1">
+            <div class="slider slider1">
                 <p>Welcome to Victor</p>
                 <h2>Unleash the <span>Pinnacle of <br>Excellence</span> in Oil Storage</h2>
-                <br><br><a href="#">CONTACT US</a>
-            </section>
-            <section class="slider slider2">
+                <br><br><a href="contact-us.html">CONTACT US</a>
+            </div>
+            <div class="slider slider2">
                 <p>Welcome to Victor</p>
                 <h2>Unleash the <span>Pinnacle of <br>Excellence</span> in Oil Storage</h2>
-                <br><br><a href="#">CONTACT US</a>
-            </section>
+                <br><br><a href="contact-us.html">CONTACT US</a>
+            </div>
             <div class="arrow">
                 <i id="prevBtn" class="fa-solid fa-chevron-left"></i>
                 <i id="nextBtn" class="fa-solid fa-chevron-right"></i>
             </div>
         </main>
+        <section class="choose-us">
+            <div class="left-side">
+                <h4>WHY CHOOSE US</h4>
+                <h2>WE STARTED OIL STORAGE <br>JUST FOR YOU</h2>
+            </div>
+            <div class="right-side">
+                <p>We have established ourselves as a leader by diversifying our services to cater to the evolving needs of the energy sector. At victor, we offer our unwavering dedication to safety, security, and environmental responsibility. Our facilities are equipped with state-of-the-art technology and adhere to the highest industry standards, ensuring that your valuable assets are in safe hands.</p>
+                <p class="satisfied">Satisfied Customers</p>
+                <div class="line">
+                    <div class="draw-line">
+                        <div class="satisfied-line"></div>
+                        <div class="satisfied-line2"></div>
+                    </div>
+                <p>80%</p>
+                </div>
+            </div>
+        </section>
+        <section class="what-we-provide">
+            <h4>WHAT WE PROVIDE</h4>
+            <h2>WE OFFER THE BEST OIL STORAGE FACILITIES</h2>
+            <div class="gallery">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+                <div class="img4"></div>
+                <div class="img5"></div>
+                <div class="img6"></div>
+            </div>
+        </section>
+        <section class="faqs">
+            <h4>FREQUENTLY ASKED QUESTIONS</h4>
+            <h2>KNOW MORE ABOUT US</h2>
+            <div class="faqs-section">
+                <div class="left-side">
+                    <p>Your satisfaction is our commitment, and your success is our priority. Contact us today, and let us tailor an industry-leading solution that aligns seamlessly with your requirements. </p>
+                    <div class="accordion">
+                        <div class="acheader">
+                            <p class="show">Lorem ipsum dolor sit, amet consectetur </p>
+                        </div>
+                        <div class="accontent collapsed">
+                            <p class="hide">adipisicing elit. Repellat recusandae quas distinctio, rerum quae repellendus quibusdam optio autem illo atque ullam, qui, rem beatae minus fuga aliquid commodi aperiam quam!</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="acheader">
+                            <p class="show">Lorem ipsum dolor sit, amet consectetur </p>
+                        </div>
+                        <div class="accontent collapsed">
+                            <p class="hide">adipisicing elit. Repellat recusandae quas distinctio, rerum quae repellendus quibusdam optio autem illo atque ullam, qui, rem beatae minus fuga aliquid commodi aperiam quam!</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="acheader">
+                            <p class="show">Lorem ipsum dolor sit, amet consectetur </p>
+                        </div>
+                        <div class="accontent collapsed">
+                            <p class="hide">adipisicing elit. Repellat recusandae quas distinctio, rerum quae repellendus quibusdam optio autem illo atque ullam, qui, rem beatae minus fuga aliquid commodi aperiam quam!</p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="acheader">
+                            <p class="show">Lorem ipsum dolor sit, amet consectetur </p>
+                            
+                        </div>
+                        <div class="accontent collapsed">
+                            <p class="hide">adipisicing elit. Repellat recusandae quas distinctio, rerum quae repellendus quibusdam optio autem illo atque ullam, qui, rem beatae minus fuga aliquid commodi aperiam quam!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side"></div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h4>TESTIMONIALS</h4>
+            <h2>WHAT CLIENTS SAY ABOUT US</h2>
+            <div class="review review1">
+                <p> Absolutely impressed with the efficiency of this oil storage facility! The team at victor ensured that our products are stored securely, and their state-of-the-art technology made the entire process seamless. Highly recommend!</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" style="color: black;"></i>
+                </div>
+            </div>
+            <div class="review">
+                <p>Exceptional tank farm management! victor has exceeded our expectations in terms of safety and environmental responsibility. Their commitment to using advanced technology and environmentally friendly practices sets them apart in the industry.</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="review">
+                <p>Great attention to detail! victor has provided us with a secure and efficient oil storage solution. The variety of tank options and the environmentally conscious approach give us confidence in the safety and sustainability of our stored products.</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" style="color: black;"></i>
+                </div>
+            </div>
+            <div class="review">
+                <p>We've been using victor for our oil storage needs, and the experience has been outstanding. The facility is well-maintained, and the team is always ready to assist. Our products are in safe hands, and we appreciate the reliability.</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" style="color: black;"></i>
+                    <i class="fa-solid fa-star" style="color: black;"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-left" id="prevBtn1" style="display: none;"></i>
+            <i class="fa-solid fa-chevron-right" id="nextBtn1" style="display: none;"></i>
+        </section>
+        <section class="newsletter">
+
+            <h2>Sign Up to Get Latest Updates</h2>
+            <div class="form">
+                <input type="text" placeholder="Your Email Address">
+                <button type="submit">Submit   </button>
+            </div>
+        </section>
+        <footer>
+            <div class="footer1">
+                <div class="side1">
+                    <h2>victor</h2>
+                    <p>We are the world leaders in oil storage. We dont give up on challenges. We lead and others follow.</p>
+                    <p class="talk">Talk to us today <br>123 456 789</p>
+                    <p class="num"></p>
+                </div>
+                <div class="side2">
+                    <h6>QUICK LINKS</h6>
+                    <ul>
+                        <li><a href="about-us.html">Our Company</a></li>
+                        <li><a href="offices.html">Our Offices</a></li>
+                        <li><a href="profile.html">Company Profile</a></li>
+                        <li><a href="faq.html">Faq</a></li>
+                    </ul>
+                </div>
+                <div class="side3">
+                    <h6>OUR PRODUCTS</h6>
+                    <ul>
+                        <li><a href="fuel.html">Fuel products</a></li>
+                        <li><a href="gas.html">Gas products</a></li>
+                        <li><a href="oil.html">Oil products</a></li>
+                        <li><a href="bitumen.html">Bitumen products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer2">
+                <p>Copyright &copy; 2023; All rights reserved</p>
+                <div class="right-side">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp" style="color: green;"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram" style="color: orangered;"></i></a></li>
+                    </ul>		
+                </div>
+            </div>
+
+        </footer>
     </div>
 </body>
 </html>
