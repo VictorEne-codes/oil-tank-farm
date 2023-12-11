@@ -284,10 +284,10 @@ main .arrow .fa-chevron-left{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
     padding: 50px 0px;
-    margin-left: -170px;
+    margin-left: -10px;
 }
 .choose-us .left-side h4, .what-we-provide h4, .faqs h4, .reviews h4{
     font-size: 15px;
@@ -333,6 +333,7 @@ main .arrow .fa-chevron-left{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         /* gap: 60px; */
         padding: 50px 0px;
     }
