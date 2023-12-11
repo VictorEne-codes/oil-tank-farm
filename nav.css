@@ -128,7 +128,7 @@ nav .navigation a:hover{
 .toggle{
     display: none;
 }
-@media (max-width: 650px){
+@media (max-width: 850px){
     header{
         display: none;
     }
@@ -166,7 +166,7 @@ nav .navigation a:hover{
         position: fixed;
         top: 70px;
         right: -50px;
-        transition: all 0.5s ease;
+        transition: 0.5s;
     }
     .toggle{
         display: block;
@@ -216,4 +216,99 @@ nav .navigation a:hover{
         display: none;    
     }
 
+}
+
+@media (max-width: 650px){
+    header{
+        display: none;
+    }
+    .pre-header{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 150px;
+        width: 100%;
+        height: 80px;
+        padding: 20px 10px;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--orange);
+        padding: 20px 20px;
+        position: relative;
+    }
+    nav .navigation{
+        background-color: var(--orange);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        list-style: none;
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        right: -50px;
+        transition: 0.5s;
+    }
+    .toggle{
+        display: block;
+    }
+    nav .navigation li{
+        padding: 15px;
+    }
+    nav .navigation a{
+        text-decoration: none;
+        color: var(--white);
+        transition: all .1s ease-in;
+    }
+    nav .navigation a:hover{
+        border-bottom: 2px solid white;
+        opacity: .5;
+    }
+    #dropdown{
+        display: none;
+        position: absolute;
+        left: 70px;
+        padding-top: 3px;
+        background-color: var(--orange);
+        color: white;
+        z-index: 1;
+    }
+    #dropdown li{
+        padding: 10px;
+        list-style: none;
+        transition: all .2s ease-in;
+    }
+    #dropdown li:hover{
+        transform: translateX(10px);
+    }
+    .navigation .drop-content:hover #dropdown{
+        display: block;
+    }
+    .toggle .fa-bars{
+        font-size: 30px;
+        display: block;
+    }
+    .toggle .fa-xmark{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: var(--primary);
+        font-size: 30px;
+        display: none;    
+    }
+
+}
+@media (max-width: 320px){
+    .logo h2{
+        font-size: 20px;
+    }
 }
